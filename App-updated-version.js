@@ -49,12 +49,11 @@ class App extends Component {
          
          //push this object onto artist array
          artistArr.push(artistObj)
-       })
-     }).then( () => {
-       //Now that all data is retreived and artist objects with studio address are correctly created,
-       // set state.artists to that array.  
-       this.setState({
-         artists: artistArr 
+         //Now that all data is retreived and artist objects with studio address are correctly created,
+         // set state.artists to that array.  
+         this.setState({
+           artists: artistArr 
+         })
        })
      })
     })
